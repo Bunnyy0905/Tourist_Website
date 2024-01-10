@@ -9,8 +9,8 @@ body {
     /* overflow: hidden; */
 }
 
-.main {
-    position: absolute;
+.more-main {
+    /* position: absolute; */
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -19,9 +19,32 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
     column-gap: 10px;
     row-gap: 10px;
+    margin-bottom: 40px;
 }
 
-.image img {
+
+.more-heading h1{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.more-heading h1::after {
+    content: '';
+    background: crimson;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.more-image img {
     width: 300px;
     height: 300px;
     border-radius: 5px;
@@ -51,7 +74,7 @@ body {
     transition: .3s ease;
 }
 
-.container {
+.more-container {
     position: relative;
     width: 300px;
     height: 300px;
@@ -60,11 +83,11 @@ body {
 
 }
 
-.container:hover .place_name {
+.more-container:hover .place_name {
     visibility: visible;
 
 }
 
-.container:hover .image {
+.more-container:hover .more-image {
     transform: scale(1.1);
 }
