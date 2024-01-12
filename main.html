@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="more.css">
     <link rel="stylesheet" href="footer.css">
     <script src="https://kit.fontawesome.com/d3b3cad14e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -16,15 +18,16 @@
 <body>
     <header>
         <a href="#" class="brand">Travelo</a>
-        <div class="menu-btn"></div>
+        <div class="menu-btn">
         <div class="navigation">
             <div class="navigation-items">
                 <a href="#">Home</a>
-                <a href="">About</a>
-                <a href="#">Explore</a>
-                <a href="#">Gallery</a>
-                <a href="">Contacts</a>
+                <a href="#about-us">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="./footer.html">Contacts</a>
             </div>
+        </div>
         </div>
     </header>
 
@@ -132,8 +135,9 @@
         </div>
     </section>
     
+    <!-- Services Page -->
 
-    <div class="services-container">
+    <div id="services" class="services-container">
         <h1>Our Services</h1>
         <div class="services-row">
             <div class="services">
@@ -174,6 +178,237 @@
                     wonders. Let our curated insights be your compass to an unforgettable adventure.</p>
             </div>
 
+        </div>
+    </div>
+
+    <!-- About Us Page -->
+    <div id="about-us" class="about">
+        <div class="heading">
+            <h1>Explore with Us</h1>
+        </div>
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Welcome to Our Website</h2>
+                <p>Introducing to the heart of mother nature, where every corner tells a story and every adventure is a
+                    chapter waiting to be written. At TRAVELO, we're not just a travel platform – we're your
+                    gateway to a world of discovery.</p>
+                <button class="cta-button">Learn More</button>
+
+            </div>
+            <div class="about-image">
+                <img src="images/about-us.avif" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- More/Gallery Page -->
+    <div id="gallery" class="more">
+    <div class="more-heading">
+        <h1>Iconic Destinations</h1></div>
+
+        <a href="https://www.google.com/maps/d/u/0/viewer?mid=1r4AyV3kSzIwktt-L_QjZ07j9A5k&hl=en&ll=34.01976333732034%2C74.786382&z=13">
+    <div class="more-main">
+        <div class="more-container">
+            <div class="more-image">
+                <img src="./images/SRINAGAR.jpg" alt="">
+            </div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Srinagar, Jammu & Kashmir</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://www.google.com/maps/d/u/0/viewer?mid=1AIElsl5B1Avj2MfeGMxNKLVOxCs&hl=en&ll=41.86875930336217%2C18.591395&z=6">    
+    <div class="more-container">
+        <div class="more-image">
+            <img src="./images/MANALI.jpg" alt="">
+        </div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Manali, Himanchal Pradesh</span>
+            </div>
+        </div>
+    </a>
+
+        <a href="https://www.google.com/maps/d/u/0/viewer?mid=12-NDt1PXsR23jR2uMTT_-xk6zRw&hl=en_US&ll=27.171969834159004%2C78.04062518197094&z=17"><div class="more-container">
+        <div class="more-image">
+            <img src="./images/Taj-Mahal.jpg" alt="">
+        </div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Taj Mahal, Agra</span>
+            </div>
+        </div>
+        </a>
+
+        <a href="https://www.google.com/maps/d/u/0/viewer?mid=1vSDtl04-But6usuaayG954o04UA&hl=en_US&ll=24.57126999999998%2C73.691544&z=17">
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/UDAIPUR.jpg" alt="">
+        </div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Udaipur, Rajasthan</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://www.google.com/maps/d/u/0/viewer?mid=1rz2-aB5JR-zrkjrFgueJcJczCS4&hl=en&ll=30.039099051109876%2C78.24319100000001&z=12">
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/RISHIKESH.jpg" alt="">
+            </div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Rishikesh, Uttarakhand</span>
+            </div>
+        </div>
+    </a>
+<!-- ************************************************************** -->
+
+<a href="https://www.google.com/maps/d/u/0/viewer?mid=1_1HSIp0ZildS0TGMjp7CBju3spk&hl=en_US&ll=26.923935999999998%2C75.82674399999999&z=17">
+<div class="more-container">       
+<div class="more-image">
+            <img src="./images/Hawa-Mahal.avif" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Hawa Mahal, Jaipur</span>
+            </div>
+        </div>
+    </a>
+
+        <a href="https://www.google.com/maps/d/u/0/viewer?mid=1TpMVuVcHop9ARCssk9kC4ahF7Uk&hl=en&ll=31.62012300000002%2C74.87684700000001&z=17">
+            <div class="more-container">
+        <div class="more-image">
+            <img src="./images/AMRITSAR.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Golden Temple, Amritsar</span>
+            </div>
+        </div>
+    </a>
+
+
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/Mehrangarh Fort.avif" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Mehrangarh Fort, Jodhpur </span>
+            </div>
+        </div>
+
+        <a href="https://www.google.com/maps/d/u/0/viewer?mid=1ap3fkO7QMJyCrfY38-EseXAR_W4&hl=en&ll=11.409675629059725%2C76.714713&z=14">
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/OOTY.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Ooty, Tamil Nadu</span>
+            </div>
+        </div>
+    </a>
+
+<a href="https://www.google.com/maps/d/u/0/viewer?mid=1J33MEl1cWmGi6OzOIx0h1S6d8gs&hl=en_US&ll=29.302733084472024%2C79.4348965&z=10">
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/NAINITAL.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Nainital, Uttarakhand</span>
+            </div>
+        </div>
+    </a>
+
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/INDIA GATE.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>India Gate, Delhi</span>
+            </div>
+        </div>
+
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/Aguada-Fort.avif" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Aguada Fort, Goa </span>
+            </div>
+        </div>
+
+        <div class="more-more-container">
+        <div class="more-image">
+            <img src="./images/JAISALMER.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Jaisalmer, Rajasthan</span>
+            </div>
+        </div>
+
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/MYSORE.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Mysore, Karnataka</span>
+            </div>
+        </div>
+
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/MUSSOORIE.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Mussoorie, Uttarakhand</span>
+            </div>
+        </div>
+
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/GULMARG.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Gulmarg, Jammu & Kashmir</span>
+            </div>
+        </div>
+
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/MAHABALESHWAR.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Mahabaleshwar, Maharashtra</span>
+            </div>
+        </div>
+
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/Calangute Beach.avif" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Calangute Beach, Goa</span>
+            </div>
+        </div>
+
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/Gwalior.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Gwalior, Madhya Pradesh</span>
+            </div>
+        </div>
+
+        <div class="more-container">
+        <div class="more-image">
+            <img src="./images/AULI.jpg" alt=""></div>
+            <div class="place_name">
+                <i class="ri-map-pin-fill"></i>
+                <span>Auli, Uttarakhand</span>
+            </div>
         </div>
     </div>
 
