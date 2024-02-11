@@ -5,728 +5,334 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="more.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  <!-- for search bar -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
-    <!-- <script src="search.js"></script> -->
-
+    <link rel="stylesheet" href="more.css">
 </head>
 
 <body>
-        <div class="container">
-            <h1 class="heading">Iconic Destinations</h1>
-            <form >
-                <div class="search">
-                    <span class="search-icon material-symbols-outlined">search</span>
-                    <input class="search-input" id="search" type="search" placeholder="Search" onkeyup="search()">
-                </div>
-            </form>
-            
-            <div class="box-container" id="place-list">
 
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/SRINAGAR.jpg" alt="">
 
-                        <div class="rating">
-                            <b>4.5</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Srinagar, Jammu & Kashmir</h3>
-                        <p class="para">
-                            Srinagar is a destination situated in the union territory of Jammu & Kashmir, along the
-                            banks of the serene river Jhelum. Renowned for its stationary houseboats and traditional
-                            rowboats known as Shikaras on Dal Lake, Srinagar offers a dreamlike experience. The city is
-                            adorned with the tranquil Dal Lake and Nigeen Lake, making it an idyllic setting for
-                            honeymooners and family vacations.</p>
-                        <p class="best-time"> <b>Best Time:</b> April to October </p>
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                                href="https://www.google.com/maps/place/Srinagar/@34.1067185,74.8067551,12z/data=!3m1!4b1!4m6!3m5!1s0x38e1855686e3c5ef:0x66244b7cc1e305c6!8m2!3d34.0836708!4d74.7972825!16zL20vMDFxXzIy?entry=ttu">
-                                <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/MANALI.jpg" alt="">
-                        <div class="rating">
-                            <b>4.5</b>
-                            <span class="light">/5</span>
-                        </div>
-
-                    </div>
-                    <div class="content">
-                        <h3>Manali, Himanchal Pradesh</h3>
-                        <p class="para">
-                            Nestled at the northern end of the Kullu Valley in Himachal Pradesh, Manali is a magical
-                            hill station renowned for its spectacular valleys, breathtaking views, and snow-capped
-                            mountains. Gifted by the majestic Himalayas, it has become one of the most popular
-                            destinations for honeymooners. The town is surrounded by lush forests of oak, deodar, and
-                            pine, enhancing its natural beauty.
-                        </p>
-                        <p class="best-time"> <b>Best Time:</b> October to June </p>
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                                href="https://www.google.com/maps/place/Manali,+Himachal+Pradesh/@32.2394721,77.1871198,14z/data=!3m1!4b1!4m6!3m5!1s0x39048708163fd03f:0x8129a80ebe5076cd!8m2!3d32.2431872!4d77.1891761!16zL20vMDQ2eDR4?entry=ttu">
-                                <span><i class="ri-map-pin-fill"></i></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/Taj-Mahal.jpg" alt="">
-                        <div class="rating">
-                            <b>4.5</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Taj Mahal, Agra</h3>
-                        <p class="para">The Taj Mahal, situated on the banks of the River Yamuna in Agra, stands as one
-                            of the Seven Wonders of the World. Commissioned by the Mughal Emperor Shah Jahan in the 17th
-                            century, it serves as a majestic memorial for his third wife, Mumtaz Mahal, and also houses
-                            Shah Jahan's own tomb. It is crafted entirely from white marble, showcasing breathtaking
-                            architectural beauty.
-                        </p>
-                        <p class="best-time"> <b>Best Time:</b> October to March </p>
-
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                                href="https://www.google.com/maps/place/Taj+Mahal/@27.1751448,78.0421422,15z/data=!4m6!3m5!1s0x39747121d702ff6d:0xdd2ae4803f767dde!8m2!3d27.1751448!4d78.0421422!16zL20vMGw4Y2I?entry=ttu">
-                                <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/UDAIPUR.jpg" alt="">
-                        <div class="rating">
-                            <b>4.4</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Udaipur, Rajasthan</h3>
-                        <p class="para">
-                            Udaipur, often hailed as the "City of Lakes," is a captivating jewel in the crown of
-                            Rajasthan. Set against the backdrop of the Aravalli Range, this city beckons visitors with
-                            its regal charm, historical grandeur, and breathtaking landscapes. Surrounded by the
-                            Aravalli Hills, Udaipur is renowned for its azure lakes, magnificent palaces, vibrant
-                            culture, and delectable cuisine. </p>
-                        <p class="best-time"> <b>Best Time:</b> October to March </p>
-
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                                href="https://www.google.com/maps/place/Udaipur,+Rajasthan/@24.6082862,73.7048721,13z/data=!3m1!4b1!4m6!3m5!1s0x3967e56550a14411:0xdbd8c28455b868b0!8m2!3d24.585445!4d73.712479!16zL20vMGJfa2Z5?entry=ttu">
-                                <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/RISHIKESH.jpg" alt="">
-                        <div class="rating">
-                            <b>4.3</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Rishikesh, Uttarakhand</h3>
-                        <p class="para">Nestled in the foothills of the Himalayas at the confluence of the Ganga and
-                            Chandrabhaga rivers, Rishikesh is a quaint town in the Dehradun district of Uttarakhand,
-                            near Haridwar. Also referred to as Hrishikesh, this destination is celebrated for its
-                            adventure activities, ancient temples, popular cafes, and holds the esteemed title of the
-                            "Yoga Capital of the World."
-                        </p>
-                        <p class="best-time"> <b>Best Time:</b> September to March </p>
-
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                                href="https://www.google.com/maps/place/Rishikesh,+Uttarakhand/data=!4m2!3m1!1s0x39093e67cf93f111:0xcc78804a6f941bfe?sa=X&ved=2ahUKEwiR2_7VqOKDAxXhxDgGHaUoB-8Q8gF6BAgKEAA">
-                                <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/Hawa-Mahal.avif" alt="">
-                        <div class="rating">
-                            <b>4.4</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Hawa Mahal, Jaipur</h3>
-                        <p class="para">
-
-                            Hawa Mahal, an imposing structure located at the intersection of Jaipur's main road, Badi
-                            Chaupad, was constructed in 1799 by Maharaja Sawai Pratap Singh. The palace's distinctive
-                            feature is its intricate lattice of small windows designed to capture cool winds, ensuring
-                            comfort during hot summers. This architectural marvel reflects both functional ingenuity and
-                            cultural traditions in its design. </p>
-                        <p class="best-time"> <b>Best Time:</b> October to March </p>
-
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                                href="https://www.google.com/maps/place/Hawa+Mahal/@26.9239363,75.8267438,15z/data=!4m6!3m5!1s0x396db14b1bd30ba5:0x860e5d531eccb20c!8m2!3d26.9239363!4d75.8267438!16zL20vMDZrN3Fj?entry=ttu">
-                                <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/CHERRAPUNJEE.jpg" alt="">
-                        <div class="rating">
-                            <b>4.5</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Cherrapunji, Meghalaya</h3>
-                        <p class="para">
-
-                           
-Cherrapunji, or Sohra, once renowned as the wettest place on Earth, is located around 50 kilometers from Shillong in Meghalaya. Despite losing its title to Mawsynram, Cherrapunji boasts the record for the highest recorded rainfall in a calendar year.  Though no longer the wettest, Cherrapunji continues to captivate with its stunning landscapes and unique features. </p>
-                        <p class="best-time"> <b>Best Time:</b>September to May </p>
-
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                                href="https://www.google.com/maps/place/Cherrapunji,+Meghalaya+793108/@25.2702091,91.7322884,15z/data=!3m1!4b1!4m6!3m5!1s0x37508cd1f80d5647:0x1db9015577abfe88!8m2!3d25.2702095!4d91.7322884!16zL20vMDZkcW1w?entry=ttu">
-                                <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/Mehrangarh Fort.avif" alt="">
-                        <div class="rating">
-                            <b>4.3</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Mehrangarh Fort, Jodhpur</h3>
-                        <p class="para">
-
-                           
-                            Mehrangarh, or Mehran Fort, was constructed in 1459 by Rao Jodha in Jodhpur and stands as one of the largest forts in India. Positioned atop a 410 feet elevated hill, it is characterized by massive walls providing a commanding presence. Known for its historical significance and cinematic prominence, Mehrangarh Fort continues to be a prominent cultural and architectural symbol in the region.                       
-                             <p class="best-time"> <b>Best Time:</b> November to March </p>
-                        
-
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Mehrangarh+Fort/@26.2978267,73.0180132,15z/data=!4m6!3m5!1s0x39418db7f5a4e8d5:0x91c3eb1d93338906!8m2!3d26.2978267!4d73.0180132!16zL20vMDVjX2xt?entry=ttu">
-                                            <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/OOTY.jpg" alt="">
-                        <div class="rating">
-                            <b>4.3</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Ooty, Tamil Nadu</h3>
-                        <p class="para">
-
-                            Ooty is a renowned hill station in Tamil Nadu and a favored tourist destination. Originally serving as the summer headquarters for the East India Company, this "Queen of the hills" offers a picturesque retreat. Particularly popular among couples and honeymooners, Ooty captivates visitors with its scenic beauty and panoramic views of the Nilgiri mountains.
-                            <p class="best-time"> <b>Best Time:</b> March to June </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Ooty,+Tamil+Nadu/@11.4118526,76.6934216,14z/data=!3m1!4b1!4m6!3m5!1s0x3ba8bd84b5f3d78d:0x179bdb14c93e3f42!8m2!3d11.4102038!4d76.6950324!16s%2Fm%2F012n8khs?entry=ttu">
-                            <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/NAINITAL.jpg" alt="">
-                        <div class="rating">
-                            <b>4.3</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Nainital, Uttarakhand</h3>
-                        <p class="para">
-
-                            Nainital, a charming hill station nestled at the foothills of the Kumaon ranges in Uttarakhand, stands as the most visited destination in North India. Proximity to Dehradun and Delhi makes it an easily accessible and popular weekend getaway.  The picturesque Naina Lake serves as the focal point, bordered by Mall Road and Thandi Sadak, while the bus stand completes the charming setting. 
-                            
-                            <p class="best-time"> <b>Best Time:</b> March to June </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-            <a
-                href="https://www.google.com/maps/place/Nainital,+Uttarakhand/@29.3824502,79.4552707,14z/data=!3m1!4b1!4m6!3m5!1s0x39a0a1bc28fd9d61:0x7cae7ba916987db3!8m2!3d29.3924139!4d79.4533773!16zL20vMDE4Y2s5?entry=ttu">
-                            <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/INDIA GATE.jpg" alt="">
-                        <div class="rating">
-                            <b>4.3</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>India Gate, Delhi</h3>
-                        <p class="para">
-
-
-                            Delhi, the capital of India, encompasses the dynamic coexistence of historic Old Delhi and the modernity of New Delhi. Known as the city with a heart, Delhi's diverse personalities contribute to its unique charm. The narrow, winding lanes of Old Delhi reflect its Mughal legacy, notably seen in the bustling Chandni Chowk market, one of the country's oldest and busiest markets.
-
-
-
-
-
-                           <p class="best-time"> <b>Best Time:</b> October to March </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/India+Gate/@28.612912,77.2295097,15z/data=!4m6!3m5!1s0x390ce2daa9eb4d0b:0x717971125923e5d!8m2!3d28.612912!4d77.2295097!16zL20vMDM1bWMz?entry=ttu">
-                            <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/Aguada-Fort.avif" alt="">
-                        <div class="rating">
-                            <b>4.4</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Aguada Fort, Goa </h3>
-                        <p class="para">
-
-
-                            Aguada Fort is a historic fort situated on Sinquerim Beach, overlooking the confluence of the Mandovi River and the Arabian Sea, about 18 km from Panjim. The fort's crumbling ramparts provide a glimpse into its Portuguese legacy. Notable features include a unique four-storey lighthouse, the only one of its kind in Asia, and the breathtaking view of the sunset from the fort. 
-
-
-
-
-                           <p class="best-time"> <b>Best Time:</b> November to February </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Aguada+Fort/@15.4922519,73.7737462,15z/data=!4m6!3m5!1s0x3bbfc175c68cbd6b:0xa3837630b3697b1c!8m2!3d15.4922519!4d73.7737462!16zL20vMDk0MDNx?entry=ttu">
-                                        <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/MYSORE.jpg" alt="">
-                        <div class="rating">
-                            <b>4.2</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Mysore, Karnataka</h3>
-                        <p class="para">
-
-
-
-                            Mysore is aptly named "The City of Palaces," standing as a significant historical hub in India. Nestled at the foothills of the Chamundi Hills, it boasts a rich heritage, encompassing a dazzling royal history, intricate architecture, renowned silk sarees, yoga, and sandalwood production. As the third most populated city in Karnataka, Mysore attracts millions of tourists annually, captivated by its cultural allure. 
-
-
-
-
-
-
-
-
-
-                           <p class="best-time"> <b>Best Time:</b> October to March </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                href="https://www.google.com/maps/place/Mysuru,+Karnataka/@12.3151782,76.6346484,13.4z/data=!4m6!3m5!1s0x3baf70381d572ef9:0x2b89ece8c0f8396d!8m2!3d12.2958104!4d76.6393805!16zL20vMGo2MDM?entry=ttu">
-                      <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/JAISALMER.jpg" alt="">
-                        <div class="rating">
-                            <b>4.5</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Jaisalmer, Rajasthan </h3>
-                        <p class="para">
-
-
-                            Jaisalmer, known as the 'golden city' in Rajasthan, India, is a prominent tourist destination near the Pakistan Border. Renowned for its golden dunes in the Thar Desert, the city boasts ornate Jain temples, lakes, and havelis, all adorned in golden yellow sandstone. The city's rich history and architecture, coupled with the golden hues of its surroundings, make Jaisalmer a captivating and enchanting destination.
-
-
-
-                           <p class="best-time"> <b>Best Time:</b> October to March </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Jaisalmer,+Rajasthan+345001/@26.9035788,70.8947302,13z/data=!3m1!4b1!4m6!3m5!1s0x3947bc28aa1b396b:0xf5ef9bd660d66ee3!8m2!3d26.9157487!4d70.9083443!16zL20vMDQ3a3hf?entry=ttu">
-                            <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/MUSSOORIE.jpg" alt="">
-                        <div class="rating">
-                            <b>4.1</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Mussoorie, Uttarakhand </h3>
-                        <p class="para">
-
-
-                            Mussoorie, often referred to as the "Queen of The Hills," is a renowned hill station situated 290 km away from Delhi in Uttarakhand's Dehradun district. Nestled against the scenic backdrop of the Shivalik range in the Himalayas and the doon valley, Mussoorie stands at an altitude of 7000 feet above sea level. Enjoying a cool and pleasant climate year-round, it served as the former British summer capital. 
-
-
-
-                           <p class="best-time"> <b>Best Time:</b> September to June </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Mussoorie,+Uttarakhand/@30.4547233,78.0764401,14z/data=!3m1!4b1!4m6!3m5!1s0x3908d0cfa61cda5b:0x197fd47d980e85b1!8m2!3d30.4597892!4d78.0643723!16zL20vMDU0Mjlq?entry=ttu">
-                                        <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/GULMARG.jpg" alt="">
-                        <div class="rating">
-                            <b>4.6</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Gulmarg, Jammu & Kashmir </h3>
-                        <p class="para">
-
-                            Gulmarg, is a renowned skiing destination nestled in the Pir Panjal Range of the Union Territory of Jammu and Kashmir. Enveloped by snow-capped peaks of the Himalayas, lush meadows, and verdant valleys with evergreen forests, Gulmarg is a picturesque retreat. Notably, it boasts the world's second-highest Gondola ride, providing breathtaking views of the surrounding landscapes. 
-
-
-                           <p class="best-time"> <b>Best Time:</b> October to June </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Gulmarg+193403/@34.050635,74.3730411,15z/data=!3m1!4b1!4m6!3m5!1s0x38e1af91308dd977:0x7a5cc65c8fb01df7!8m2!3d34.0483704!4d74.3804791!16zL20vMDU0eXMw?entry=ttu">
-                            <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/MAHABALESHWAR.jpg" alt="">
-                        <div class="rating">
-                            <b>4.3</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Mahabaleshwar, Maharashtra </h3>
-                        <p class="para">
-
-
-                            Mahabaleshwar is a renowned hill station celebrated for its strawberries and natural beauty. The region is characterized by numerous rivers, impressive waterfalls, and majestic peaks, making it a picturesque destination. Located approximately 120 km southwest of Pune and 285 km from Mumbai, Mahabaleshwar is a sought-after weekend getaway for residents of these cities.
-
-                           <p class="best-time"> <b>Best Time:</b> December to February </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Mahabaleshwar,+Maharashtra+412806/@17.9258221,73.6487817,14z/data=!3m1!4b1!4m6!3m5!1s0x3bc2655313cba1bb:0xca8196c7aa20a0a8!8m2!3d17.9307285!4d73.6477342!16zL20vMDJfZGpu?entry=ttu">
-                            <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/Calangute Beach.avif" alt="">
-                        <div class="rating">
-                            <b>4.4</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Calangute Beach, Goa</h3>
-                        <p class="para">
-
-
-                            Calangute Beach stands as the longest beach in North Goa, extending from Candolim to Baga. Renowned for its expansive shoreline and widespread popularity, Calangute is a bustling hub that attracts tourists and backpackers from across the globe. The beach's vibrant atmosphere and lively surroundings make it a sought-after destination for those seeking sun, sand, and a vibrant coastal experience in North Goa.
-                           <p class="best-time"> <b>Best Time:</b> Throughout the year </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Calangute+Beach/@15.5468355,73.7536895,14z/data=!3m1!4b1!4m6!3m5!1s0x3bbfea0148f4ed2b:0xcb592fad5d257d17!8m2!3d15.549441!4d73.7534857!16s%2Fg%2F1tfkzn7s?entry=ttu">
-                                        <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-       
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/Gwalior.jpg" alt="">
-                        <div class="rating">
-                            <b>3.8</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Gwalior, Madhya Pradesh</h3>
-                        <p class="para">
-
-
-
-                            Gwalior, situated in the state of Madhya Pradesh, is a historic city renowned for its hilltop fort and rich heritage. The city exudes a majestic charm with its impressive palaces and glorious temples, reflecting a glorious past. The hilltop fort stands as a prominent symbol of Gwalior's historical significance, making it a captivating destination for those intrigued by India's cultural and architectural heritage.
-                                                       <p class="best-time"> <b>Best Time:</b> July to March </p>
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Gwalior,+Madhya+Pradesh/@26.2141559,78.1908989,12z/data=!3m1!4b1!4m6!3m5!1s0x3976c5d1792291fb:0xff4fb56d65bc3adf!8m2!3d26.2124007!4d78.1772053!16zL20vMDE5Nl9o?entry=ttu">
-                                                    <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-       
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/HARIDWAR.jpg" alt="">
-                        <div class="rating">
-                            <b>4.0</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Haridwar, Uttarakhand</h3>
-                        <p class="para">
-
-
-
-                            Haridwar, one of the seven holiest cities in India, holds a sacred place in Hinduism and is situated in Uttarakhand. Positioned at the point where the Ganga enters the Indo-Gangetic plains, the city is adorned with temples, ashrams, and narrow lanes. Haridwar is renowned as a major Hindu pilgrimage site where millions of devotees gather to take a dip in the holy Ganges, seeking spiritual purification.                       
-                            <p class="best-time"> <b>Best Time:</b> October to February </p>
-                        
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Haridwar,+Uttarakhand/@29.9526499,78.1159258,12z/data=!3m1!4b1!4m6!3m5!1s0x3909470eb8ee57c9:0x4e449176a640f5f3!8m2!3d29.9456906!4d78.1642478!16zL20vMDFxNnJi?entry=ttu">
-                                                                <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="box">
-                    <div class="image">
-                        <img src="./images/Kochi.jpg" alt="">
-                        <div class="rating">
-                            <b>4.2</b>
-                            <span class="light">/5</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Kochi, Kerala</h3>
-                        <p class="para">
-
-
-
-
-                            Kochi is a vibrant commercial port city steeped in a trading legacy spanning over 600 years. Often referred to as the "Queen of the Arabian Sea," Kochi serves as the financial, commercial, and industrial capital of the state of Kerala. The city's historical significance and bustling economic activity make it a dynamic destination, attracting visitors with its rich cultural heritage and contemporary urban life.
-                            <p class="best-time"> <b>Best Time:</b> July to April </p>
-                        
-
-                        <a href="#" class="btn">Read More</a>
-                        <div class="icons">
-                            <span><i class="fas fa-calendar"></i> 21st May 2022</span>
-                            <a
-                            href="https://www.google.com/maps/place/Kochi,+Kerala/@9.982372,76.3009338,11z/data=!3m1!4b1!4m6!3m5!1s0x3b080d514abec6bf:0xbd582caa5844192!8m2!3d9.9312328!4d76.2673041!16zL20vMGZsMnM?entry=ttu">
-                                                                <span><i class="ri-map-pin-fill"></i> Location</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-               
-
-            </div>
-            <a href="#" id="load-more">Show More</a>
+    <div class="more">
+        <div class="more-heading">
+            <h1>Iconic Destinations</h1>
         </div>
 
-        <script src="loadmore.js"></script>
-        <!-- <script src="search.js"></script> -->
-        <script type="text/javascript">
-            // function search(){
-            //     let filter = document.getElementById("search").value.toUpperCase();
-            //     let item=document.querySelectorAll('.box');
-            //     let pname= document.getElementsByTagName('h3');
+        <div class="more-main">
+            <a
+                href="https://www.google.com/maps/place/Srinagar/@34.1067185,74.8067551,12z/data=!3m1!4b1!4m6!3m5!1s0x38e1855686e3c5ef:0x66244b7cc1e305c6!8m2!3d34.0836708!4d74.7972825!16zL20vMDFxXzIy?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/SRINAGAR.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Srinagar, Jammu & Kashmir</span>
+                    </div>
+                </div>
+            </a>
 
-            //     for(var i=0; i<=pname.length; i++){
-            //         let a =item[i].getElementsByTagName('h3')[0];
-            //         let value=a.innerHTML || a.innerText || a.textContent;
-            //         if(value.toUpperCase().indexOf(filter)>-1){
-            //             item[i].style.display="";
-            //         }
-            //         else{
-            //             item[i].style.display="none";
-            //         }
-            //     }
 
-            // }
+            <a
+                href="https://www.google.com/maps/place/Manali,+Himachal+Pradesh/@32.2394721,77.1871198,14z/data=!3m1!4b1!4m6!3m5!1s0x39048708163fd03f:0x8129a80ebe5076cd!8m2!3d32.2431872!4d77.1891761!16zL20vMDQ2eDR4?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/MANALI.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Manali, Himanchal Pradesh</span>
+                    </div>
+                </div>
+            </a>
 
-            
-    // function search() {
-    //     var input, filter, boxes, box, title, i, txtValue;
-    //     input = document.getElementById('search');
-    //     filter = input.value.toUpperCase();
-    //     boxes = document.getElementById('place-list').getElementsByClassName('box');
+            <a
+                href="https://www.google.com/maps/place/Taj+Mahal/@27.1751448,78.0421422,15z/data=!4m6!3m5!1s0x39747121d702ff6d:0xdd2ae4803f767dde!8m2!3d27.1751448!4d78.0421422!16zL20vMGw4Y2I?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/Taj-Mahal.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Taj Mahal, Agra</span>
+                    </div>
+                </div>
+            </a>
 
-    //     for (i = 0; i < boxes.length; i++) {
-    //         box = boxes[i];
-    //         title = box.getElementsByTagName('h3')[0];
-    //         txtValue = title.textContent || title.innerText;
+            <a
+                href="https://www.google.com/maps/place/Udaipur,+Rajasthan/@24.6082862,73.7048721,13z/data=!3m1!4b1!4m6!3m5!1s0x3967e56550a14411:0xdbd8c28455b868b0!8m2!3d24.585445!4d73.712479!16zL20vMGJfa2Z5?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/UDAIPUR.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Udaipur, Rajasthan</span>
+                    </div>
+                </div>
+            </a>
 
-    //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-    //             box.style.display = '';
-    //         } else {
-    //             box.style.display = 'none';
-    //         }
-    //     }
-    // }
+            <a
+                href="https://www.google.com/maps/place/Rishikesh,+Uttarakhand/data=!4m2!3m1!1s0x39093e67cf93f111:0xcc78804a6f941bfe?sa=X&ved=2ahUKEwiR2_7VqOKDAxXhxDgGHaUoB-8Q8gF6BAgKEAA">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/RISHIKESH.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Rishikesh, Uttarakhand</span>
+                    </div>
+                </div>
+            </a>
 
-        </script>
+            <a
+                href="https://www.google.com/maps/place/Hawa+Mahal/@26.9239363,75.8267438,15z/data=!4m6!3m5!1s0x396db14b1bd30ba5:0x860e5d531eccb20c!8m2!3d26.9239363!4d75.8267438!16zL20vMDZrN3Fj?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/Hawa-Mahal.avif" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Hawa Mahal, Jaipur</span>
+                    </div>
+                </div>
+            </a>
 
-    </body>
+            <a
+                href="https://www.google.com/maps/place/Cherrapunji,+Meghalaya+793108/@25.2702091,91.7322884,15z/data=!3m1!4b1!4m6!3m5!1s0x37508cd1f80d5647:0x1db9015577abfe88!8m2!3d25.2702095!4d91.7322884!16zL20vMDZkcW1w?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/CHERRAPUNJEE.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Cherrapunji, Meghalaya</span>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <a
+                href="https://www.google.com/maps/place/Mehrangarh+Fort/@26.2978267,73.0180132,15z/data=!4m6!3m5!1s0x39418db7f5a4e8d5:0x91c3eb1d93338906!8m2!3d26.2978267!4d73.0180132!16zL20vMDVjX2xt?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/Mehrangarh Fort.avif" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Mehrangarh Fort, Jodhpur </span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Ooty,+Tamil+Nadu/@11.4118526,76.6934216,14z/data=!3m1!4b1!4m6!3m5!1s0x3ba8bd84b5f3d78d:0x179bdb14c93e3f42!8m2!3d11.4102038!4d76.6950324!16s%2Fm%2F012n8khs?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/OOTY.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Ooty, Tamil Nadu</span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Nainital,+Uttarakhand/@29.3824502,79.4552707,14z/data=!3m1!4b1!4m6!3m5!1s0x39a0a1bc28fd9d61:0x7cae7ba916987db3!8m2!3d29.3924139!4d79.4533773!16zL20vMDE4Y2s5?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/NAINITAL.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Nainital, Uttarakhand</span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/India+Gate/@28.612912,77.2295097,15z/data=!4m6!3m5!1s0x390ce2daa9eb4d0b:0x717971125923e5d!8m2!3d28.612912!4d77.2295097!16zL20vMDM1bWMz?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/INDIA GATE.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>India Gate, Delhi</span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Aguada+Fort/@15.4922519,73.7737462,15z/data=!4m6!3m5!1s0x3bbfc175c68cbd6b:0xa3837630b3697b1c!8m2!3d15.4922519!4d73.7737462!16zL20vMDk0MDNx?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/Aguada-Fort.avif" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Aguada Fort, Goa </span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Jaisalmer,+Rajasthan+345001/@26.9035788,70.8947302,13z/data=!3m1!4b1!4m6!3m5!1s0x3947bc28aa1b396b:0xf5ef9bd660d66ee3!8m2!3d26.9157487!4d70.9083443!16zL20vMDQ3a3hf?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/JAISALMER.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Jaisalmer, Rajasthan</span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Mysuru,+Karnataka/@12.3151782,76.6346484,13.4z/data=!4m6!3m5!1s0x3baf70381d572ef9:0x2b89ece8c0f8396d!8m2!3d12.2958104!4d76.6393805!16zL20vMGo2MDM?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/MYSORE.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Mysore, Karnataka</span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Mussoorie,+Uttarakhand/@30.4547233,78.0764401,14z/data=!3m1!4b1!4m6!3m5!1s0x3908d0cfa61cda5b:0x197fd47d980e85b1!8m2!3d30.4597892!4d78.0643723!16zL20vMDU0Mjlq?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/MUSSOORIE.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Mussoorie, Uttarakhand</span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Gulmarg+193403/@34.050635,74.3730411,15z/data=!3m1!4b1!4m6!3m5!1s0x38e1af91308dd977:0x7a5cc65c8fb01df7!8m2!3d34.0483704!4d74.3804791!16zL20vMDU0eXMw?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/GULMARG.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Gulmarg, Jammu & Kashmir</span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Mahabaleshwar,+Maharashtra+412806/@17.9258221,73.6487817,14z/data=!3m1!4b1!4m6!3m5!1s0x3bc2655313cba1bb:0xca8196c7aa20a0a8!8m2!3d17.9307285!4d73.6477342!16zL20vMDJfZGpu?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/MAHABALESHWAR.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Mahabaleshwar, Maharashtra</span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Calangute+Beach/@15.5468355,73.7536895,14z/data=!3m1!4b1!4m6!3m5!1s0x3bbfea0148f4ed2b:0xcb592fad5d257d17!8m2!3d15.549441!4d73.7534857!16s%2Fg%2F1tfkzn7s?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/Calangute Beach.avif" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Calangute Beach, Goa</span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Gwalior,+Madhya+Pradesh/@26.2141559,78.1908989,12z/data=!3m1!4b1!4m6!3m5!1s0x3976c5d1792291fb:0xff4fb56d65bc3adf!8m2!3d26.2124007!4d78.1772053!16zL20vMDE5Nl9o?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/Gwalior.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Gwalior, Madhya Pradesh</span>
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/place/Haridwar,+Uttarakhand/@29.9526499,78.1159258,12z/data=!3m1!4b1!4m6!3m5!1s0x3909470eb8ee57c9:0x4e449176a640f5f3!8m2!3d29.9456906!4d78.1642478!16zL20vMDFxNnJi?entry=ttu">
+                <div class="more-container">
+                    <div class="more-image">
+                        <img src="./images/HARIDWAR.jpg" alt="">
+                    </div>
+                    <div class="place_name">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Haridwar, Uttarakhand</span>
+                    </div>
+                </div>
+            </a>
+
+
+        </div>
+        <a href="#" class="btn-show-more">Show More</a>
+        <a href="#" class="btn-show-less">Show Less</a>
+    </div>
+    
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    let showMoreBtn = document.querySelector('.btn-show-more');
+    let showLessBtn = document.querySelector('.btn-show-less');
+    let destinations = [...document.querySelectorAll('.more-main a')];
+    let currentItem = 8;  // Change this to the number of items you want to show initially
+
+    // Function to toggle visibility of destination items
+    function toggleDestinations(startIndex, endIndex, displayStyle) {
+        for (let i = startIndex; i < endIndex; i++) {
+            if (destinations[i]) {
+                destinations[i].style.display = displayStyle;
+            }
+        }
+    }
+
+    // Show More button click event
+    showMoreBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        toggleDestinations(currentItem, currentItem + 4, 'grid');
+        currentItem += 4;
+
+        // Toggle Show More and Show Less buttons
+        if (currentItem >= destinations.length) {
+            showMoreBtn.style.display = 'none';
+            showLessBtn.style.display = 'inline-block';
+        }
+    });
+
+    // Show Less button click event
+    showLessBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        toggleDestinations(currentItem - 4, currentItem, 'none');
+        currentItem -= 4;
+
+        // Toggle Show More and Show Less buttons
+        if (currentItem <= 4) {
+            showMoreBtn.style.display = 'inline-block';
+            showLessBtn.style.display = 'none';
+        }
+    });
+
+    // Initially hide items beyond the initial set
+    toggleDestinations(currentItem, destinations.length, 'none');
+});
+    </script>
+</body>
 
 </html>
