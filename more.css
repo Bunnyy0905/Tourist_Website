@@ -1,73 +1,48 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    /* text-transform: capitalize; */
-    transition: all .2s linear;
 }
 
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 25px 20px;
-    position: relative;
-    
+body {
+    min-height: 100vh;
+    /* overflow: hidden; */
 }
 
-
-.search{
-    --padding:15px;
-    position: absolute;
-    top: 82px;
-    right: 25px;
-    /* margin-left: 150px; */
-    /* margin-bottom: 30px; */
-    width: max-content;
+.more{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: var(--padding);
-    border-radius: 28px;
-    background: #f6f6f6 ;
-    transition: box-shadow 0.25s;
+}
+
+.more-main {
+    /* position: absolute; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 40px;
 }
 
 
-.search:focus-within{
-    box-shadow: 0 0 2px rgba(0,0,0,0.75);
-}
-.search-input{
-    font-size: 16px;
-    font-family: 'Lexend', sans-serif;
-    color: #333333;
-    margin-left: var(--padding);
-    outline: none;
-    border: none;
-     background: transparent;
-     width: 300px;
-}
-
-.search-input::placeholder, 
-.search-icon{
-    color: rgba(0,0,0,0.25);
-}
 
 
-.container .heading{
+
+.more-heading h1{
     text-align: center;
     padding-top: 5%;
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-weight: 600;
     position: relative;
-    color: #334;
 }
 
-
-.container .heading::after {
+.more-heading h1::after {
     content: '';
     background: crimson;
     width: 100px;
@@ -79,171 +54,99 @@
 
 }
 
-
-.container .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-    
-}
-
-.container .box-container .box{
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px; 
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    display: none;
-}
-.box-container .box:nth-child(1),
-.box-container .box:nth-child(2),
-.box-container .box:nth-child(3)
-{
-    display: inline-block;
-}
-
-
-
-.container .box-container .box .image{
-    margin-bottom: 20px;
-    overflow: hidden;
-    height: 250px;
+.more-image img {
+    width: 300px;
+    height: 300px;
     border-radius: 5px;
-    position: relative;
-    
-}
-
-
-
-.container .box-container .box .image img{
-    height: 100%;
-    width: 100%;
     object-fit: cover;
+    object-position: center;
+    transition: .2s ease;
+
+
 }
 
-.container .box-container .box:hover .image img{
-    transform: scale(1.1);
-    
-}
-
- .container .box-container .box .rating{
+.place_name {
+    font-size: 1.2rem;
+    font-style: italic;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    border-radius: 4px;
-    background-color: #247c2a; 
-    padding: 10px;
-    font-size: 15px;
-    color: #fff;
-    
-
-   
- } 
- .container .box-container .box .rating b{
-    font-size: 18px;
- }
-
- .container .box-container .box .rating .light{
-    opacity: 0.6;
- }
-
-.container .box-container .box .content h3{
-    font-size: 20px;
-    color: #334;
-}
-
-.container .box-container .box .content .para{
-    font-size: 15px;
-    color: #777;
-    /* line-height: 2; */
-    padding: 10px 0;
-    text-align: justify;
-}
-
-.container .box-container .box .content .best-time{
-    font-family: manrope bold,sans-serif;
-    font-size: 15px;
-    color: #000;
-    /* line-height: 2; */
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.container .box-container .box .content .btn{
-    display: inline-block;
-    padding: 10px 30px;
-    border: 1px solid #334;
-    color: #334;
-    font-size: 16px;
-
-}
-
-.container .box-container .box .content .btn:hover{
-    background-color: crimson;
-    border-color: crimson;
-    color: #fff;
-}
-
-.container .box-container .box .content .icons{
+    top: 0;
+    left: 0;
+    background: crimson;
+    opacity: .7;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #334;
-}
-
-.container .box-container .box .content .icons span{
-    font-size: 14px;
-    color: #777;
-}
-
-.container .box-container .box .content .icons span i{
-    color: crimson;
-    padding-right: 5px;
-}
-
-#load-more{
-    margin-top: 20px;
-    display: inline-block;
-    padding: 13px 30px;
-    border: 1px solid #334;
-    color: #334;
-    font-size: 16px;
-    background-color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-
-
-}
-
-#load-more:hover{
-    background-color: crimson;
-    border-color: crimson;
+    justify-content: center;
+    flex-direction: column;
     color: #fff;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+.more-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    /* display: inline-block; */
+
+}
+
+
+.more-container:hover .place_name {
+    visibility: visible;
+
+}
+
+.more-container:hover .more-image {
     transform: scale(1.1);
 }
 
-@media(max-width:450px){
-    .container .heading{
-        font-size: 25px;
-    }
-
-    .container .box-container{
-        grid-template-columns: 1fr;
-    }
-
-    .container .box-container .box .image{
-        height: 200px;
-    }
-
-    .container .box-container .box .content p{
-        font-size: 12px;
-    }
-
-    .container .box-container .box .content .icons span{
-        font-size: 12px;
-    }
+.services-list div a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 12px;
+    margin: 20px 0;
+    display: inline-block;
 }
 
+.services-list div:hover{
+    background: #ababab;
+    transform: translateY(-10px);
+}
+
+.btn-show-more, .btn-show-less{
+    display:block;
+    margin: 50px auto;
+    font-size: 1.1em;
+    width: fit-content;
+    border: 1px solid crimson;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s ease;
+   
+    
+}
+
+
+.btn-show-more:hover,
+.btn-show-less:hover{
+    background: crimson;
+    color: #fff;
+    transform: scale(1.2);
+
+}
+
+
+
+.btn-show-less {
+    display: none;  /* Initially hide the "Show Less" button */
+     
+  
+}
 
 
